@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-gray-100 font-sans">
+    <header class="bg-blue-500 text-white py-4 shadow-md">
+      <h1 class="text-center text-4xl font-bold">Posts</h1>
+    </header>
+
+    <main class="mt-6">
+      <div
+        id="postContainer"
+        class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-6 px-4 mx-auto max-w-screen-xl"
+      >
+        <!-- Post items will be dynamically inserted here -->
+      </div>
+
+      <div class="flex justify-center mt-8">
+        <button
+          id="showMoreBtn"
+          class="bg-blue-600 text-white rounded-lg px-6 py-3 font-semibold text-lg shadow-lg hover:bg-blue-700 transition-colors duration-300"
+        >
+          Show More
+        </button>
+      </div>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
